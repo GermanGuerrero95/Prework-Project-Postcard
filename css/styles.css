@@ -1,0 +1,122 @@
+/*Root*/
+
+:root{
+    /*typography   4000*/
+    --mainTypography:'Handlee', cursive;
+    /*Primary*/
+    --black:#000;
+    --gray:#757575;
+    --lightGray:#C0C0C0;
+    --white:#ffffff;
+
+    
+}
+
+
+/*Global*/
+html {
+    font-size: 62.5%;   
+    box-sizing: border-box;
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+   
+}
+
+
+body {
+    font-family: var(--mainTypography);
+    font-size: 1.6rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--black);
+}
+
+
+/*Utilities*/
+
+.container {
+    max-width: 40rem;
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--white);
+    padding: 1rem;
+    height: 30rem;
+}
+
+
+/*Header*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+
+/*Main*/
+
+.main{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 1.5rem;
+}
+
+.main__description{
+    text-align: justify;
+    font-weight: bold;
+}
+
+.main__textend{
+    font-weight: bold;
+}
+
+/*Form*/
+
+
+.form__input{
+    border: none;
+    border-bottom: 0.1rem solid var(--gray);
+    margin-top: 1.3rem;
+
+}
+
+.form input:nth-child(2){
+    margin-top: 0;
+}
+
+
+
+.form__input::placeholder{
+    font-family: var(--mainTypography);
+}
+
+
+/*Footer*/
+
+
+.footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__btn{
+    font-family: var(--mainTypography);
+    border: none;
+    background-color: var(--lightGray);
+    cursor: pointer;
+    padding: .2rem .5rem ;
+    font-size: 1.65rem;
+}
+
